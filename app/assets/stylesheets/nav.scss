@@ -1,0 +1,98 @@
+#nav {
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+  color: #636363;
+  position: absolute;
+  width: 64em;
+  max-width: calc(100% - 4em);
+  padding: 1em;
+  background-color: #f7f7f7;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  cursor: default;
+  text-align: center;
+
+  input, select, textarea, a:hover, strong, b, h1, h2, h3, h4, h5, h6 {
+    color: #636363;
+  }
+
+  blockquote {
+    border-left-color: #dddddd;
+  }
+
+  code {
+    background: rgba(222, 222, 222, 0.25);
+    border-color: #dddddd;
+  }
+
+  hr {
+    border-bottom-color: #dddddd;
+  }
+
+  + #main {
+    padding-top: 4.25em;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      -moz-transition: margin 0.2s ease;
+      -webkit-transition: margin 0.2s ease;
+      -ms-transition: margin 0.2s ease;
+      transition: margin 0.2s ease;
+      display: inline-block;
+      margin: 0 0.35em;
+      padding: 0;
+      vertical-align: middle;
+
+      a {
+        display: inline-block;
+        height: 2.25em;
+        line-height: 2.25em;
+        padding: 0 1.25em;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: inset 0 0 0 1px transparent;
+
+        &.active {
+          background-color: #ffffff;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &.alt {
+    position: fixed;
+    top: 0;
+    padding: 0.5em 1em;
+    background-color: rgba(247, 247, 247, 0.95);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 10000;
+
+    ul li {
+      margin: 0 0.175em;
+
+      a {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #nav {
+    display: none;
+
+    + #main {
+      padding-top: 0;
+    }
+  }
+}

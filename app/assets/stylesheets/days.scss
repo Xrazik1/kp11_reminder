@@ -1,0 +1,104 @@
+
+/* Days */
+
+.main .container {
+  display: grid;
+  grid-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+#first .container .day {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #efa8b0, #a89cc8, #8cc9f0);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: height 4s ease;
+
+  .notice {
+    margin: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    box-sizing: unset;
+    word-break: break-all;
+  }
+
+  form {
+    margin: 5px 5px 0 5px;
+    position: relative;
+
+    .button {
+      margin-right: 0;
+    }
+
+    .textarea {
+      width: 100%;
+      min-height: 50px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .buttons {
+    display: inline;
+    float: right;
+    min-height: 50px;
+    margin: 10px;
+
+    .info {
+      float: left;
+    }
+
+    .primary {
+      float: right;
+    }
+
+    .success {
+      float: right;
+    }
+  }
+
+  .inline_save {
+    float: left;
+    display: inline;
+  }
+
+  .button {
+    width: 200px;
+    padding: 6px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 6px;
+    float: right;
+    margin-right: 5px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  margin-right: 5px;
+  margin: 5px;
+
+  .header {
+    margin: 10px;
+    border-bottom: 1px solid gainsboro;
+    word-break: break-all;
+
+    .weekday {
+      float: left;
+      font-weight: bolder;
+    }
+
+    .date {
+      float: right;
+    }
+  }
+}
