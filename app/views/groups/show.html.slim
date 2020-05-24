@@ -1,0 +1,15 @@
+/! Nav
+nav#nav
+  ul
+    = render groups
+
+#main
+  /! Days Section
+  section#first.main.notices
+    header.major
+      h2
+        span style=("font-weight: bolder;") #{group.name}
+        span  | Объявления
+    .container
+      = render days
+

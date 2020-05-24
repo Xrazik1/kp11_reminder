@@ -1,0 +1,9 @@
+= form_with model: notice,
+            url: group_week_day_create_inline_url(group, week, day),
+            method: :post,
+            class: 'hide',
+            data: { aos: 'zoom-in', day_id: day.id },
+            local: true do |form|
+  = form.text_area :content, id: :notice_content, class: 'textarea'
+  .buttons
+    = form.submit "Сохранить", class: 'button success'

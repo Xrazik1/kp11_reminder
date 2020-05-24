@@ -1,0 +1,9 @@
+.day
+  .header
+    span.weekday = day.name
+    span.date = day.date
+  = render day.notices
+  = render 'notices/form_inline', day: day
+  .buttons
+    a.button.primary data-day-id = "#{day.id}" Добавить заметку
+
